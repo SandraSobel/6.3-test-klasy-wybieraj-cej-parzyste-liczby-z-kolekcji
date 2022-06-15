@@ -28,6 +28,7 @@ public class CollectionTestSuite {
 
             //when
             emptyListObj.exterminate(emptyList);
+
             //then
             Assertions.assertTrue(emptyList.isEmpty());
 
@@ -48,17 +49,15 @@ public class CollectionTestSuite {
 
             //when
             numbersList.exterminate(numbersTest2);
+            List<Integer> expectedResult = new ArrayList<>();
+            expectedResult.add(2);
+            expectedResult.add(4);
+            expectedResult.add(6);
 
             //then
-            boolean testNormalList;
-            for (int i = 0; i < numbersTest2.size(); i++) {
-                if (numbersTest2.get(i) % 2 != 0 && numbersTest2.size() != 0) {
-                    testNormalList = false;
-                } else {
-                    testNormalList = true;
-                }
-                Assertions.assertTrue(testNormalList = true);
-            }
+
+            Assertions.assertEquals(numbersTest2,expectedResult);
+
         }
         @DisplayName ("Test Odd Numbers Exterminator on Normal List Extra(Arrays.asList)")
         @Test
@@ -70,17 +69,15 @@ public class CollectionTestSuite {
 
             //when
             numbersList3.exterminate(numbersTest3);
+            List<Integer> expectedResult = new ArrayList<>();
+            expectedResult.add(2);
+            expectedResult.add(4);
+            expectedResult.add(6);
 
             //then
-            boolean testNormalList2;
-            for (int i = 0; i < numbersTest3.size(); i++) {
-                if (numbersTest3.get(i) % 2 != 0 && numbersTest3.size() != 0) {
-                    testNormalList2 = false;
-                } else {
-                    testNormalList2 = true;
-                }
-            Assertions.assertTrue(testNormalList2 = true);
-            }
+
+            Assertions.assertEquals(numbersTest3,expectedResult);
         }
+
 
 }
