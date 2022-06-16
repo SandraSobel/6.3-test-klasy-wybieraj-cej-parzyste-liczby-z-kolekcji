@@ -8,11 +8,11 @@ public class Circle implements Shape{
         this.diameter = diameter;
     }
 
-    public void getShapeName() {
-        //do nothing
+    public String getShapeName() {
+        return name;
     }
 
-    public void getField() {
-        //do nothing
+    public double getField() {
+        return Math.PI * Math.pow((double)diameter,2);
     }
 }
