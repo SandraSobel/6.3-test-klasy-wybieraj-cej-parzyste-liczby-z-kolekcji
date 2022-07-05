@@ -31,9 +31,14 @@ public class StreamMain {
         expressionExecutor.executeExpression(3, 4, FunctionalCalculator::subBFromA);
         expressionExecutor.executeExpression(3, 4, FunctionalCalculator::divideAByB);
 
-        //Zadanie: upiększacz tekstów
+
         PoemBeautifier poemBeautifier = new PoemBeautifier();
-        poemBeautifier.beautify("String1", (toButify) -> System.out.println("ABC" + toButify));
+
+        poemBeautifier.beautify("Text1",(text) -> text + "ABC");
+        poemBeautifier.beautify("Text2",(text) -> "ABC" + text );
+        poemBeautifier.beautify("Text3",(text) -> text.toUpperCase() );
+        poemBeautifier.beautify("Text4",(text) -> text.toLowerCase() );
+        poemBeautifier.beautify("Text5",(text) -> text.concat(" butified"));
 
     }
 }
