@@ -9,10 +9,12 @@ public final class Forum {
         theForumUserList.add(new ForumUser(1001,"user1",'M',1995,10,5,0));
         theForumUserList.add(new ForumUser(1002,"user2",'F',1998,9,16,7));
         theForumUserList.add(new ForumUser(1004,"user3",'M',1999,2,2,2));
-        theForumUserList.add(new ForumUser(1005,"user4",'F',2002,4,28,0));
+        theForumUserList.add(new ForumUser(1005,"user4",'F',2001,4,28,1));
         theForumUserList.add(new ForumUser(1006,"user5",'M',2001,11,12,4));
         theForumUserList.add(new ForumUser(1007,"user6",'F',1993,12,18,5));
         theForumUserList.add(new ForumUser(1008,"user7",'M',1991,3,31,1));
+        theForumUserList.add(new ForumUser(1010,"user8",'M',2002,8,7,2));
+        theForumUserList.add(new ForumUser(1011,"user9",'M',2002,7,11,7));
 
     }
     public List<ForumUser> getUserList() {
